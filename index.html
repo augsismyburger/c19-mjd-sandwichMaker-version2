@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sammich Maker</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Make Some Sammiches</h1>
+    <h2>You Sooo Hungyyyy</h2>
+    <div class="container">
+        <div class="sandwich-station">
+        <h3>Pick Your Bread</h3>
+        <select name="bread" id="bread-choice">
+            <option value="wheat">Wheat</option>
+            <option value="rye">Rye</option>
+            <option value="cheesy">Cheddar</option>
+            <option value="italian">Italian</option>
+        </select>
+        <h3>Pick Your Meats</h3>
+        <label>Turkey<input type="checkbox" name="meats" value="turkey"></label>
+        <label>Capicolla<input type="checkbox" name="meats" value="capicolla"></label>
+        <label>Lamb<input type="checkbox" name="meats" value="lamb"></label>
+        <label>Pancetta<input type="checkbox" name="meats" value="pancetta"></label>
+        <br>
+        <h3>Pick Your Cheese</h3>
+        <label>Cheddar<input type="checkbox" name="cheese" value="cheddar"></label>
+        <label>Provalone<input type="checkbox" name="cheese" value="provalone"></label>
+        <label>Pepper Jack<input type="checkbox" name="cheese" value="pepper jack"></label>
+        <label>American<input type="checkbox" name="cheese" value="american"></label>
+        <br>
+        <h3>Pick Your Veggers</h3>
+        <label>Lettuce<input type="checkbox" name="veggies" value="lettuce"></label>
+        <label>Peppers<input type="checkbox" name="veggies" value="peppers"></label>
+        <label>Onions<input type="checkbox" name="veggies" value="onions"></label>
+        <label>Tomato<input type="checkbox" name="veggies" value="tomato"></label>
+        <br>
+        <h3>Pick Your Condies</h3>
+        <label>Mayo<input type="checkbox" name="condys" value="mayo"></label>
+        <label>Mustard<input type="checkbox" name="condys" value="mustard"></label>
+        <label>Oil & Vinegar<input type="checkbox" name="condys" value="oil & vinegar"></label>
+        <label>Lard<input type="checkbox" name="condys" value="lard"></label>
+        <br><br>
+        <button type="button" id="make-sandwich-button">Order Sandwich</button>
+
+
+        </div>
+        <div id="finished-sandwich"></div>
+        <div id="bread-spot"></div>
+        <div id="meat-spot"></div>
+        <div id="cheese-spot"></div>
+        <div id="veggie-spot"></div>
+        <div id="condy-spot"></div>
+    </div>
+
+    <script src="javascripts/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="dist/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
